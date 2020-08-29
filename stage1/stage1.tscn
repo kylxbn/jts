@@ -5,84 +5,43 @@
 [ext_resource path="res://stage1/stage1_fg.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Jay_sprite.tscn" type="PackedScene" id=4]
 
-[node name="Node2D" type="Node2D" index="0"]
+[node name="Node2D" type="Node2D"]
 
-[node name="ParBG" type="ParallaxBackground" parent="." index="0"]
-
+[node name="ParBG" type="ParallaxBackground" parent="."]
 layer = -1
-offset = Vector2( 0, 0 )
-rotation = 0.0
-scale = Vector2( 1, 1 )
-transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-scroll_offset = Vector2( 0, 0 )
-scroll_base_offset = Vector2( 0, 0 )
-scroll_base_scale = Vector2( 1, 1 )
-scroll_limit_begin = Vector2( 0, 0 )
-scroll_limit_end = Vector2( 0, 0 )
 scroll_ignore_camera_zoom = true
 
-[node name="BlackBG" type="ParallaxLayer" parent="ParBG" index="0"]
-
+[node name="BlackBG" type="ParallaxLayer" parent="ParBG"]
 motion_scale = Vector2( 0, 0 )
-motion_offset = Vector2( 0, 0 )
-motion_mirroring = Vector2( 0, 0 )
-_sections_unfolded = [ "Motion" ]
 
-[node name="ColorRect" type="ColorRect" parent="ParBG/BlackBG" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="ColorRect" type="ColorRect" parent="ParBG/BlackBG"]
 margin_right = 256.0
 margin_bottom = 224.0
-rect_pivot_offset = Vector2( 0, 0 )
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
 color = Color( 0, 0, 0, 1 )
-_sections_unfolded = [ "Rect" ]
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Clouds" type="ParallaxLayer" parent="ParBG" index="1"]
-
+[node name="Clouds" type="ParallaxLayer" parent="ParBG"]
 motion_scale = Vector2( 0.1, 0.1 )
-motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 256, 0 )
-_sections_unfolded = [ "Motion" ]
 
-[node name="Sprite" type="Sprite" parent="ParBG/Clouds" index="0"]
-
+[node name="Sprite" type="Sprite" parent="ParBG/Clouds"]
 texture = ExtResource( 1 )
 centered = false
-_sections_unfolded = [ "Offset" ]
 
-[node name="Ruins" type="ParallaxLayer" parent="ParBG" index="2"]
-
+[node name="Ruins" type="ParallaxLayer" parent="ParBG"]
 position = Vector2( 0, 80 )
 motion_scale = Vector2( 0.25, 0.25 )
-motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 256, 0 )
-_sections_unfolded = [ "Motion", "Transform" ]
 
-[node name="Ruins" type="Sprite" parent="ParBG/Ruins" index="0"]
-
+[node name="Ruins" type="Sprite" parent="ParBG/Ruins"]
 texture = ExtResource( 2 )
 centered = false
-_sections_unfolded = [ "Offset" ]
 
-[node name="Foreground" type="ParallaxLayer" parent="ParBG" index="3"]
+[node name="Foreground" type="ParallaxLayer" parent="ParBG"]
 
-motion_scale = Vector2( 1, 1 )
-motion_offset = Vector2( 0, 0 )
-motion_mirroring = Vector2( 0, 0 )
-_sections_unfolded = [ "Motion" ]
+[node name="TileMap" parent="ParBG/Foreground" instance=ExtResource( 3 )]
 
-[node name="TileMap" parent="ParBG/Foreground" index="0" instance=ExtResource( 3 )]
-
-[node name="Jay" parent="ParBG/Foreground" index="1" instance=ExtResource( 4 )]
-
+[node name="Jay" parent="ParBG/Foreground" instance=ExtResource( 4 )]
 position = Vector2( 96, 168 )
-_sections_unfolded = [ "Transform" ]
-
-

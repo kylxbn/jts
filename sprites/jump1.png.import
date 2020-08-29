@@ -3,20 +3,21 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/jump1.png-017c4bf394cfd32d7b17536627eced8d.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://sprites/jump1.png"
-source_md5="32013a95cee012599054b07a6a31d59e"
-
 dest_files=[ "res://.import/jump1.png-017c4bf394cfd32d7b17536627eced8d.stex" ]
-dest_md5="454c509185b1a4e38968951eb296c635"
 
 [params]
 
 compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
+compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
 flags/filter=false
@@ -26,6 +27,7 @@ flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
+process/invert_color=false
 stream=false
 size_limit=0
 detect_3d=true

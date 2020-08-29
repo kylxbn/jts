@@ -3,20 +3,21 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/jay_run_right_3.png-91cc71bd30577e9d1c6866e315ae9213.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://sprites/jay_run_right_3.png"
-source_md5="d8f07b06657c42450f1a7db3f8a7f870"
-
 dest_files=[ "res://.import/jay_run_right_3.png-91cc71bd30577e9d1c6866e315ae9213.stex" ]
-dest_md5="c772ca2169009bc8cd2fd2d447ad6927"
 
 [params]
 
 compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
+compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
 flags/filter=false
@@ -26,6 +27,7 @@ flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
+process/invert_color=false
 stream=false
 size_limit=0
 detect_3d=true

@@ -3,20 +3,21 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/ruins.png-29d47dab88959372b61d4f46bd0b365d.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://stage1/ruins.png"
-source_md5="5e3261a78688363187b6b66fd868622e"
-
 dest_files=[ "res://.import/ruins.png-29d47dab88959372b61d4f46bd0b365d.stex" ]
-dest_md5="0d8d5ef760aa04a0d0d42b635d4917a6"
 
 [params]
 
 compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
+compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
 flags/filter=false
@@ -26,6 +27,7 @@ flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
+process/invert_color=false
 stream=false
 size_limit=0
 detect_3d=true

@@ -14,18 +14,23 @@ func _ready():
 func _process(delta):
 	if position.x > 110:
 		bg.scroll_offset.x = -(position.x - 110)
+	if position.y > 300:
+		motion.y = 0
+		motion.x = 0
+		position.y = 0
+		position.x = position.x - 50
 
 func _physics_process(delta):
 	motion.y += 14
 	
 	if is_on_floor():
 		motion.x = 0
-		if Input.is_action_pressed("ui_right") or Input.is_mouse_button_pressed(1):
+		if Input.is_action_pressed("ui_right"):
 			motion.x += MAXSPEED
 		elif position.x > 4 and Input.is_action_pressed("ui_left"):
 			motion.x -= MAXSPEED
 		
-		if Input.is_action_just_pressed("ui_up"):
+		if Input.is_action_just_pressed("ui_jump"):
 			motion.y = -300
 	else:
 		if motion.x > -MAXSPEED and Input.is_action_pressed("ui_left"):
